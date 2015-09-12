@@ -23,6 +23,7 @@ tsd install ionic --save
 
 git clone https://github.com/kinumi/ionic-typescript-bootstrap .tmp
 cp -a .tmp/template/. .
+rm -rf .tmp
 
 git add .
 git commit -m "ionic-typescript-bootstrap"
