@@ -1,2 +1,7 @@
 # ionic-typescript-bootstrap
-A bootstrap script to develop Ionic apps by TypeScript.
+
+## USAGE
+
+$ ionic start YOUR_APP_NAME blank
+$ cd YOUR_APP_NAME
+$ https://raw.githubusercontent.com/kinumi/ionic-typescript-bootstrap/master/bootstrap.sh | bash
