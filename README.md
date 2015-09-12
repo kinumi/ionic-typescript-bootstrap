@@ -5,5 +5,5 @@
 ```
 $ ionic start YOUR_APP_NAME blank
 $ cd YOUR_APP_NAME
-$ https://raw.githubusercontent.com/kinumi/ionic-typescript-bootstrap/master/bootstrap.sh | bash
+$ curl -o- https://raw.githubusercontent.com/kinumi/ionic-typescript-bootstrap/master/bootstrap.sh | bash
 ```
