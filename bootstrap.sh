@@ -10,10 +10,10 @@ ionic platform add browser
 npm install
 gulp install
 
-npm install gulp-htmlmin
-npm install gulp-typescript
-npm install gulp-sourcemaps
-npm install gulp-uglify
+npm install gulp-htmlmin --save
+npm install gulp-typescript --save
+npm install gulp-sourcemaps --save
+npm install gulp-uglify --save
 
 npm install -g tsd
 tsd install cordova/* --save
