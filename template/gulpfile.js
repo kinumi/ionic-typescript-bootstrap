@@ -14,10 +14,10 @@ var sh = require('shelljs');
 
 var paths = {
   sass: ['./scss/**/*.scss'],
-  src: ['./src/**/*.ts'],
+  src: ['./src/**/*.ts', './src/**/*.html'],
 };
 
-gulp.task('default', ['sass', 'compile-typescript']);
+gulp.task('default', ['sass', 'compile-typescript', 'compile-html']);
 
 gulp.task('sass', function(done) {
   gulp.src('./scss/ionic.app.scss')
@@ -35,7 +35,7 @@ gulp.task('sass', function(done) {
 
 gulp.task('watch', function() {
   gulp.watch(paths.sass, ['sass']);
-  gulp.watch(paths.src, ['compile-typescript']);
+  gulp.watch(paths.src, ['compile-typescript', 'compile-html']);
 });
 
 gulp.task('install', ['git-check'], function() {
