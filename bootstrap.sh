@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 git init
-git add *
+git add .
 git commit -m "initial commit"
 
 ionic platform add ios
@@ -22,7 +22,7 @@ tsd install angular --save
 tsd install ionic --save
 
 git clone https://github.com/kinumi/ionic-typescript-bootstrap .tmp
-cp -a .tmp/template/* .
+cp -a .tmp/template/. .
 
-git add *
+git add .
 git commit -m "ionic-typescript-bootstrap"
